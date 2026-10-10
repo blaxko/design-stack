@@ -1,0 +1,8 @@
+{
+  "name": "design-stack",
+  "version": "1.0.0",
+  "description": "Research user flows (Page Flows method), build them with Untitled UI components via its official MCP server, and audit with Checklist Design.",
+  "author": { "name": "blaxko", "url": "https://github.com/blaxko" },
+  "license": "MIT",
+  "keywords": ["design", "ui", "ux", "untitled-ui", "page-flows", "user-flows", "react", "tailwind"]
+}

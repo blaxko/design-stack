@@ -1,0 +1,18 @@
+{
+  "name": "design-stack",
+  "description": "Page Flows + Untitled UI + Checklist Design for Claude Code: research flows, build with real components, audit before shipping.",
+  "owner": { "name": "blaxko", "url": "https://github.com/blaxko" },
+  "plugins": [
+    {
+      "name": "design-stack",
+      "source": "./plugins/design-stack",
+      "description": "page-flows, untitled-ui and design-stack skills, plus the official Untitled UI MCP server.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "checklist-design",
+      "source": { "source": "github", "repo": "checklist-design/skills" },
+      "description": "Official Checklist Design skill: audit or critique any UI against 129 checklists (pages, components, flows)."
+    }
+  ]
+}
