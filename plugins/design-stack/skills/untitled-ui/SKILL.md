@@ -38,6 +38,13 @@ The tools don't write files: they return a CLI command (e.g. `npx untitledui@lat
 
 Without the MCP server: `npx untitledui@latest add <component-name>` (e.g. `button`, `input`, `select`, `modal`, `table`). `--overwrite` replaces a local copy with the latest — commit first.
 
+**CLI or MCP can't reach untitledui.com** (common in cloud sessions, where the network only allows GitHub and package registries — `npx untitledui` fails with a network/fetch error, or the MCP server isn't connected): copy the free components from Untitled UI's MIT GitHub repo instead.
+1. `git clone --depth 1 https://github.com/untitleduico/react <scratch-dir>/untitledui-src`
+2. First time only, copy the foundation into the project: `styles/theme.css`, `styles/globals.css` (merge with the project's own), `styles/typography.css`, `utils/cx.ts`, `utils/is-react-component.ts`, `hooks/`, and install `@untitledui/icons react-aria-components tailwindcss-react-aria-components tailwind-merge tailwindcss-animate` (needs Tailwind v4).
+3. Copy only the component folders you need from `components/base`, `components/application`, `components/foundations`, `components/shared-assets` (the free repo has no `marketing` folder), keeping the same paths, and follow their internal imports so nothing is missing.
+4. Make the `@/` import alias resolve to where you put them (tsconfig `paths` + bundler alias), then build to confirm.
+This route has free components only — no PRO components or page templates — so compose landing/marketing sections from base + application parts.
+
 **PRO errors:** if a tool returns `pro_access_required`, do NOT rebuild that component from scratch. Tell the user it's a PRO item and offer: log in (`npx untitledui@latest login` or the MCP OAuth prompt), or use the closest free component instead.
 
 ## 2. Compose it the Untitled UI way
