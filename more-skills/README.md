@@ -11,13 +11,14 @@ Each zip here is one uploadable skill that bundles a whole repo's skills (a shor
 | `caveman.zip` | JuliusBrussee/caveman | Terse replies to save tokens; terse commits/reviews; compress prompts; lean bug-fix workflows | "/caveman" (say "normal mode" to stop) |
 | `agent-skills.zip` | addyosmani/agent-skills | Production engineering lifecycle: /spec, /plan, /build, /test, /review, /webperf, /ship, plus security, perf, CI/CD | "/spec a referral system" |
 | `understand-anything.zip` | Egonex-AI/Understand-Anything | Interactive knowledge graph + guided tours of an unfamiliar repo; explain modules; diff impact | "/understand" then "/understand-onboard" |
-| `awesome-claude-skills.zip` (sent in chat, not in this repo: the source repo has no licence) | ComposioHQ/awesome-claude-skills (20 picked) | Changelogs from git, MCP server builder, Playwright app testing, posters/canvas art, themes, resumes, lead research, tweet optimizing, and more | "Write a changelog from the last 30 commits" |
+| `composio-picks.zip` (sent in chat, not in this repo: the source repo has no licence) | ComposioHQ/awesome-claude-skills (20 picked) | Changelogs from git, MCP server builder, Playwright app testing, posters/canvas art, themes, resumes, lead research, tweet optimizing, and more | "Write a changelog from the last 30 commits" |
 | `archify.zip` | tt-a1i/archify | Polished interactive architecture / sequence / data-flow / state diagrams as HTML (+PNG/SVG) | "Archify the architecture of this repo" |
 | `impeccable.zip` | pbakaus/impeccable | Design direction and critique that avoids generic AI-looking UI: /impeccable init, audit, critique, polish, bolder, quieter… | "/impeccable audit the landing page" |
 
 Notes
+- ui-ux-pro-max: the 81 font files used for canvas art were dropped to fit the 200-file upload limit; the skill fetches fonts from npm or Google Fonts instead.
 - Graphify needs its CLI: the skill installs it with `pip install graphifyy` when missing.
-- Understand Anything needs Node 22+ and pnpm; the skill copies its bundled workspace somewhere writable first.
+- Understand Anything needs Node 22+ and pnpm; the skill clones its workspace from GitHub at the start (the full workspace is over the 200-file upload limit).
 - Not included from Composio's list: its 832 app-automation skills (need a Composio account), and duplicates of built-in skills (docx, pdf, pptx, xlsx, skill-creator).
 - Session-start hooks (superpowers auto-start, caveman always-on) only run in the plugin versions below.
 
