@@ -16,6 +16,7 @@ Run these phases in order. Skip a phase only when it clearly doesn't apply (say 
 ## Phase 2 — Build with real components (`untitled-ui`)
 - Follow the `untitled-ui` skill: check the project is initialised, search the library/page templates for each step in the spec, install with the CLI, compose with semantic tokens.
 - Not a React + Tailwind project? Keep the same discipline with the project's own system: reuse existing components, tokens over raw values, every state designed.
+- For each landing-page or marketing section (navbar, hero, features/bento, CTA, footer, 404, motion), follow the `web-sections` skill to pick the pattern and pull live references.
 - Build every state from the spec — loading, empty, error, success, disabled — not just the happy path.
 
 ## Phase 3 — Verify before calling it done (`checklist-design`)

@@ -6,8 +6,8 @@
     {
       "name": "design-stack",
       "source": "./plugins/design-stack",
-      "description": "page-flows, untitled-ui and design-stack skills, plus the official Untitled UI MCP server.",
-      "version": "1.0.1"
+      "description": "page-flows, untitled-ui, web-sections and design-stack skills, plus the official Untitled UI MCP server.",
+      "version": "1.1.0"
     },
     {
       "name": "checklist-design",

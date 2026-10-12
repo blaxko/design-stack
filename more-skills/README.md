@@ -13,6 +13,7 @@ Each zip here is one uploadable skill that bundles a whole repo's skills (a shor
 | `understand-anything.zip` | Egonex-AI/Understand-Anything | Interactive knowledge graph + guided tours of an unfamiliar repo; explain modules; diff impact | "/understand" then "/understand-onboard" |
 | `composio-picks.zip` (sent in chat, not in this repo: the source repo has no licence) | ComposioHQ/awesome-claude-skills (20 picked) | Changelogs from git, MCP server builder, Playwright app testing, posters/canvas art, themes, resumes, lead research, tweet optimizing, and more | "Write a changelog from the last 30 commits" |
 | `archify.zip` | tt-a1i/archify | Polished interactive architecture / sequence / data-flow / state diagrams as HTML (+PNG/SVG) | "Archify the architecture of this repo" |
+| `60fps-motion.zip` | 60fps-Design/plugin (official, MIT) | Where to animate, loading/success/error states, motion tokens, motion handoff specs, recreating shipped interactions (iOS-first; web/Android by translation). Full clip search needs the paid 60fps MCP | "Find animation opportunities in the dashboard" |
 | `impeccable.zip` | pbakaus/impeccable | Design direction and critique that avoids generic AI-looking UI: /impeccable init, audit, critique, polish, bolder, quieter… | "/impeccable audit the landing page" |
 
 Notes

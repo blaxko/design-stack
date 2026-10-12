@@ -7,7 +7,8 @@ Three design resources turned into one workflow for Claude: **research the flow 
 | `page-flows` | Written for this bundle (Page Flows has no API/skill) | Teardown method + a 34-flow pattern library (accounts, onboarding, checkout, cancel, KYC, wallet connect, transactions, swaps, lifecycle email) → a step-by-step flow spec with every state and edge case. Uses pageflows.com in your signed-in browser when available. |
 | `untitled-ui` | Written for this bundle + Untitled UI's official AI guide (MIT) | Finds/installs components, page templates and icons via the **official Untitled UI MCP server** and CLI; enforces semantic tokens, React Aria conventions, all states. |
 | `checklist-design` | **Official** skill from Checklist Design (MIT, 129 checklists) | `audit` (item-by-item table) or `critique` of any screenshot, URL, Figma frame or source file. |
-| `design-stack` | Written for this bundle | Runs all three in order. |
+| `web-sections` | Written for this bundle from navbar.gallery, footer.design, cta.gallery, 404s.design, unsection.com, bentogrids.com, 60fps.design and Jiro | Section-by-section playbook: pattern taxonomy, must-haves and live-reference URLs for navbars, heroes, features/bento, CTAs, footers, 404s and motion; optional Jiro MCP. |
+| `design-stack` | Written for this bundle | Runs the workflow in order (and uses `web-sections` for each landing-page section). |
 
 Plus the **Untitled UI MCP server** (`https://www.untitledui.com/react/api/mcp`), auto-registered by the plugin.
 
@@ -50,9 +51,9 @@ Projects need `npx untitledui@latest init` (Node 18+) before Untitled UI compone
 ## Install — Claude app (claude.ai / desktop / mobile)
 
 Upload each zip in `claude-ai-uploads/` in the app's Settings, in the Skills section (upload a skill):
-`page-flows.zip`, `untitled-ui.zip`, `checklist-design.zip`, `design-stack.zip`.
+`page-flows.zip`, `untitled-ui.zip`, `web-sections.zip`, `checklist-design.zip`, `design-stack.zip`.
 
-Optional: add Untitled UI as a custom connector with URL `https://www.untitledui.com/react/api/mcp` so its component search works there too.
+Optional connectors (Settings → Connectors → Add custom connector): Untitled UI `https://www.untitledui.com/react/api/mcp`, Jiro `https://mcp.jiro.build` (free Jiro account sign-in; some templates premium).
 
 ## Licences
 Checklist Design skill and Untitled UI's guide are MIT — licence files are included next to them. Page Flows content is not redistributed; the pattern library is original writing.
